@@ -17,6 +17,30 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDz4aWZTOsmo6MsmfzLWmIxK73EPovJubY",
+        authDomain: "alison-curriculo.firebaseapp.com",
+        projectId: "alison-curriculo",
+        storageBucket: "alison-curriculo.appspot.com",
+        messagingSenderId: "571415749032",
+        appId: "1:571415749032:web:26f94d09133080a69a3d9d",
+        measurementId: "G-SW58PW9SCG",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
     <header>
       <div class="container d-flex p-4">
         <div class="">
@@ -88,7 +112,7 @@
           <li class="list-group-item">
             <b>Full Stack Developer Jr</b> - Fugro | 2019 - To this day
             <p class="m-0 text-justify">
-              I develop the management system of Fugro company. I'm in charge of
+              I develop the management system of Fugro company, in which I'm in charge of
               modeling the database, architect the backend, develop the
               frontend, and create unit tests to ensure consistency.
               <br />
@@ -146,7 +170,7 @@
             <b>Online Tic-tac-toe</b>
             <p class="m-0 text-justify">
               I developed a version of Tic-tac-toe, which you can play online
-              with your friends:
+              with your friends.
               <br />
               Languages/Frameworks used:
               <span class="badge badge-secondary">Angular</span>
